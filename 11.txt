@@ -1,0 +1,18 @@
+ <ListBox x:Name="EntryListBox"   BorderThickness="0" Grid.Row="2">
+                        <Button  Content="" BorderThickness="0" BorderBrush="Transparent" Width="50" Height="40" Click="AddBtn_Click"  HorizontalAlignment="Center" Margin="250 0 0 0" MouseMove="Button_MouseMove">
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Image Name="image"  Stretch="Fill" Source="/Assets/add48.png" />
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver"  Value="true">
+                                            <Setter TargetName="image" Property="Source"  Value="/Assets/add48pressed.png" />
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="true">
+                                            <Setter TargetName="image"  Property="Source" Value="/Assets/add48pressed.png" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </ListBox>
